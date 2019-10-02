@@ -28,24 +28,32 @@
         <img src="dinosaurs/trex.jpeg">
         <img src="dinosaurs/velociraptor.jpeg">
     </div>
-
    <script>
-   $(document).ready(function() {
-        $("button").click(function() {
-            alert("Value: " + $("#sometext").val());
-        });
-   });
+//    $(document).ready(function() {
+//         $("button").click(function() {
+//             alert("Value: " + $("#sometext").val());
+//         });
+//    });
 
-   // object with properties and assigned values
+//    object with properties and assigned values
    let design = {
             color: 'blue',
             background: "greenyellow",
             border: '2px solid black' 
         }
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("img").addClass("styleclass");
+            });
+        });
+    
    </script>
 
-   <input type="text" id="sometext" value="">
-   <button>Roar</button>
+   <!-- <input type="text" id="sometext" value=""> -->
+   <!-- button for input -->
+   <!-- <button>Roar</button> -->
+   <!-- button for adding class -->
+   <button>Try addClass()</button>
 
    
     
