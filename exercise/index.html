@@ -36,14 +36,20 @@
 //    });
 
 //    object with properties and assigned values
-   let design = {
-            color: 'blue',
-            background: "greenyellow",
-            border: '2px solid black' 
-        }
+//    let design = {
+//             color: 'blue',
+//             background: "greenyellow",
+//             border: '2px solid black' 
+//         }
+//         $(document).ready(function() {
+//             $("button").click(function() {
+//                 $("img").toggleClass("styleclass");
+//             });
+//         });
+
         $(document).ready(function() {
-            $("button").click(function() {
-                $("img").toggleClass("styleclass");
+            $("img").click(function() {
+                $(this).hide();
             });
         });
     
