@@ -22,12 +22,14 @@
         <li>Velociraptor </li>
         <li>Tyrannosaurus Rex</li>
     </ul>
-    
-    <div class="dinos">
+    <p>Dinos go ROAR!</p>
+    <p>They eat meat, plants, and drink!</p>
+    <input id="press" type="text" size="10">
+    <!-- <div class="dinos">
         <img src="dinosaurs/spinosaurus.jpeg">
         <img src="dinosaurs/trex.jpeg">
         <img src="dinosaurs/velociraptor.jpeg">
-    </div>
+    </div> -->
    <script>
 //    $(document).ready(function() {
 //         $("button").click(function() {
@@ -47,11 +49,17 @@
 //             });
 //         });
 
+        // $(document).ready(function() {
+        //     $("img").click(function() {
+        //         $(this).hide();
+        //     });
+        // });
         $(document).ready(function() {
-            $("img").click(function() {
-                $(this).hide();
+            $("input").on("keypress", function() {
+                $("p:last").hide();
             });
         });
+        
     
    </script>
 
