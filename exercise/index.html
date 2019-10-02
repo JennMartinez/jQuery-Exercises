@@ -24,12 +24,12 @@
     </ul>
     <p>Dinos go ROAR!</p>
     <p>They eat meat, plants, and drink!</p>
-    <input id="press" type="text" size="10">
-    <!-- <div class="dinos">
+    <!-- <input id="press" type="text" size="10"> -->
+    <div class="dinos">
         <img src="dinosaurs/spinosaurus.jpeg">
         <img src="dinosaurs/trex.jpeg">
         <img src="dinosaurs/velociraptor.jpeg">
-    </div> -->
+    </div>
    <script>
 //    $(document).ready(function() {
 //         $("button").click(function() {
@@ -54,9 +54,17 @@
         //         $(this).hide();
         //     });
         // });
+        // $(document).ready(function() {
+        //     $("input").on("keypress", function() {
+        //         $("p:last").hide();
+        //     });
+        // });
         $(document).ready(function() {
-            $("input").on("keypress", function() {
-                $("p:last").hide();
+            $("#hide").click(function() {
+                $("img").hide();
+            });
+            $("#show").click(function() {
+                $("img").show();
             });
         });
         
@@ -67,7 +75,10 @@
    <!-- button for input -->
    <!-- <button>Roar</button> -->
    <!-- button for adding class -->
-   <button>Try addClass()</button>
+   <!-- <button>Try addClass()</button> -->
+   <button class="button" id="hide">Hide</button>
+   <button class="button" id="show">Show</button>
+
 
    
     
