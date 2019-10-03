@@ -25,10 +25,11 @@
     <p>Dinos go ROAR!</p>
     <p>They eat meat, plants, and drink!</p>
     <!-- <input id="press" type="text" size="10"> -->
+    <button>Fader</button>
     <div class="dinos">
-        <img src="dinosaurs/spinosaurus.jpeg">
-        <img src="dinosaurs/trex.jpeg">
-        <img src="dinosaurs/velociraptor.jpeg">
+        <img id='one' src="dinosaurs/spinosaurus.jpeg">
+        <img id='two' src="dinosaurs/trex.jpeg">
+        <img id='three' src="dinosaurs/velociraptor.jpeg">
     </div>
    <script>
 //    $(document).ready(function() {
@@ -59,16 +60,22 @@
         //         $("p:last").hide();
         //     });
         // });
+        // $(document).ready(function() {
+        //     $("#hide").click(function() {
+        //         $("img").hide();
+        //     });
+        //     $("#show").click(function() {
+        //         $("img").show();
+        //     });
+        // });
+
         $(document).ready(function() {
-            $("#hide").click(function() {
-                $("img").hide();
-            });
-            $("#show").click(function() {
-                $("img").show();
+            $('button').click(function() {
+                $('#one').fadeOut('slow');
+                $('#two').fadeOut('fast');
+                $('#three').fadeOut('slow');
             });
         });
-        
-    
    </script>
 
    <!-- <input type="text" id="sometext" value=""> -->
@@ -76,8 +83,8 @@
    <!-- <button>Roar</button> -->
    <!-- button for adding class -->
    <!-- <button>Try addClass()</button> -->
-   <button class="button" id="hide">Hide</button>
-   <button class="button" id="show">Show</button>
+   <!-- <button class="button" id="hide">Hide</button>
+   <button class="button" id="show">Show</button> -->
 
 
    
