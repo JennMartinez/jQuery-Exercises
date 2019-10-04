@@ -39,7 +39,7 @@
     </div> -->
     <button>Slide</button>
 
-    <div id="div1" style="width: 90px; height:60px; background-color: goldenrod"></div>
+    <div id="div1" style="width: 90px; height:60px; display: none; background-color: goldenrod"></div>
 
 
    <script>
@@ -87,10 +87,12 @@
         //         $('#three').fadeIn('4000');
         //     });
         // });
-
-        $("button").on("click", function() {
-                $("#div1").slideUp("slow");
+        $(document).ready(function() {
+            $("button").on("click", function() {
+                $("#div1").slideDown("slow");
             });
+        });
+        
         
    </script>
 
