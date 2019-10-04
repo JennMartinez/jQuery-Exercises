@@ -26,16 +26,20 @@
     <p>They eat meat, plants, and drink!</p>
     <!-- <input id="press" type="text" size="10"> -->
     <!-- <button>Fader</button> -->
-    <button>Fader Boxes</button>
+    <!-- <button>Fader Boxes</button> -->
     <!-- <div class="dinos">
         <img id='one' src="dinosaurs/spinosaurus.jpeg">
         <img id='two' src="dinosaurs/trex.jpeg">
         <img id='three' src="dinosaurs/velociraptor.jpeg">
     </div> -->
-    <div class='fade'>
+    <!-- <div class='fade'>
         <div id='one' style='width: 2000px; height: 100px; display: none; background-color: greenyellow;'></div>
         <div id='two' style='width: 2000px; height: 100px; display: none; background-color: blue;'></div>
         <div id='three' style='width: 2000px; height: 100px; display: none; background-color: grey;'></div>
+    </div> -->
+    <button>Slide</button>
+
+    <div id="div1" style="width: 90px; height:60px; background-color: goldenrod"></div>
 
 
    <script>
@@ -76,13 +80,18 @@
         //     });
         // });
 
-        $(document).ready(function() {
-            $('button').click(function() {
-                $('#one').fadeIn();
-                $('#two').fadeIn('slow');
-                $('#three').fadeIn('4000');
+        // $(document).ready(function() {
+        //     $('button').click(function() {
+        //         $('#one').fadeIn();
+        //         $('#two').fadeIn('slow');
+        //         $('#three').fadeIn('4000');
+        //     });
+        // });
+
+        $("button").on("click", function() {
+                $("#div1").slideUp("slow");
             });
-        });
+        
    </script>
 
    <!-- <input type="text" id="sometext" value=""> -->
@@ -92,6 +101,7 @@
    <!-- <button>Try addClass()</button> -->
    <!-- <button class="button" id="hide">Hide</button>
    <button class="button" id="show">Show</button> -->
+   
 
 
    
