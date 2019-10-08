@@ -10,10 +10,11 @@
 
     <!-- Link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <h1>Dinosaur Facts</h1>
-    <br />
+    <!-- <br />
     <h2>What Is A Dinosaur?</h2>
         <p>Sed nec libero libero. Duis porta, nulla in interdum pellentesque, sapien purus aliquet nunc, ut dignissim arcu lectus non magna. Ut vitae elit interdum, feugiat mi non, dignissim ex. Donec vulputate in nulla eget lacinia. Morbi nec sodales erat. Praesent urna sapien, aliquet vitae augue a, sollicitudin ultrices eros. Nunc eu nunc accumsan, pulvinar ex id, placerat sapien. Nulla tristique posuere mi, et dapibus elit scelerisque nec.</p>    
     <h3>Top Three Deadliest Dinosaurs</h3>    
@@ -23,7 +24,14 @@
         <li>Tyrannosaurus Rex</li>
     </ul>
     <p>Dinos go ROAR!</p>
-    <p>They eat meat, plants, and drink!</p>
+    <p>They eat meat, plants, and drink!</p> -->
+    <style>
+        #drag {
+            width: 150px;
+            height: 60px;
+            background-color: rgb(37, 212, 46);
+        }
+    </style>
     <!-- <input id="press" type="text" size="10"> -->
     <!-- <button>Fader</button> -->
     <!-- <button>Fader Boxes</button> -->
@@ -37,11 +45,11 @@
         <div id='two' style='width: 2000px; height: 100px; display: none; background-color: blue;'></div>
         <div id='three' style='width: 2000px; height: 100px; display: none; background-color: grey;'></div>
     </div> -->
-    <button>Slide</button>
+    <!-- <button>Slide</button>
 
     <div id="div1" style="width: 90px; height:60px; display: none; background-color: goldenrod"></div>
-
-
+ -->
+    <div id="drag"><p>Draggable Element</p></div>
    <script>
 //    $(document).ready(function() {
 //         $("button").click(function() {
@@ -87,10 +95,14 @@
         //         $('#three').fadeIn('4000');
         //     });
         // });
-        $(document).ready(function() {
-            $("button").on("click", function() {
-                $("#div1").slideDown("slow");
-            });
+        // $(document).ready(function() {
+        //     $("button").on("click", function() {
+        //         $("#div1").slideDown("slow");
+        //     });
+        // });
+        // Shorthand for document.ready
+        $(function() {
+            $("#drag").draggable ();
         });
         
         
@@ -104,9 +116,5 @@
    <!-- <button class="button" id="hide">Hide</button>
    <button class="button" id="show">Show</button> -->
    
-
-
-   
-    
 </body>
 </html>
