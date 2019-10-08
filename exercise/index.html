@@ -35,11 +35,11 @@
     <!-- <input id="press" type="text" size="10"> -->
     <!-- <button>Fader</button> -->
     <!-- <button>Fader Boxes</button> -->
-    <div class="dinos">
+    <!-- <div class="dinos">
         <img id='one' src="dinosaurs/spinosaurus.jpeg">
         <img id='two' src="dinosaurs/trex.jpeg">
         <img id='three' src="dinosaurs/velociraptor.jpeg">
-    </div>
+    </div> -->
     <!-- <div class='fade'>
         <div id='one' style='width: 2000px; height: 100px; display: none; background-color: greenyellow;'></div>
         <div id='two' style='width: 2000px; height: 100px; display: none; background-color: blue;'></div>
@@ -50,15 +50,16 @@
     <div id="div1" style="width: 90px; height:60px; display: none; background-color: goldenrod"></div>
  -->
     <!-- <div id="drag"><p>Draggable Element</p></div> -->
-    <style>
+    <!-- <style>
         #drop {
             width: 400px;
             height: 400px;
             float: right;
             background-color:crimson;
         }
-    </style>
-    <div id="drop">My Prehistoric Legacy</div>
+    </style> -->
+    <!-- <div id="drop">My Prehistoric Legacy</div> -->
+    <input id="date" type="text" size="10">
    <script>
 //    $(document).ready(function() {
 //         $("button").click(function() {
@@ -113,10 +114,11 @@
         // $(function() {
         //     $("#drag").draggable ();
         // });
-        $(function() {
-            $("#one").draggable();
-                $("#drop").droppable();
-        });
+        // $(function() {
+        //     $("#one").draggable();
+        //         $("#drop").droppable();
+        // });
+        $("#date").datepicker();
         
         
    </script>
